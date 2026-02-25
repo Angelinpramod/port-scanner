@@ -59,7 +59,7 @@ def worker():
         scan(port)
         queue.task_done()
 
-# Add ports
+
 for port in range(1, 1000):
     queue.put(port)
 
